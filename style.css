@@ -9,7 +9,9 @@ body{
 .header {
 	text-align: center;
 	padding: 80px;
-	background-color: #b2ffff;
+	/*background: linear-gradient(gray,#b2ffff, white); /*varvi gradient, saad anda ka suuna, to right nt, by default on ulevalt alla*/
+	/*background: repeating-linear-gradient( yellow, gray 10%, red 10%);*/
+	background: radial-gradient(circle, white, #b2ffff);
 	color: gray;
 }
 .navbar {
@@ -47,6 +49,7 @@ body{
 	background-color: #b2ffff;
 	color: gray;
 }
+
 .row{
 	display: flex;/*jaotatav kast*/
 	flex-wrap: wrap;
@@ -64,6 +67,20 @@ body{
 	background-color: #a6a6a6;
 	padding: 20px;
 	color: white;
+}
+#suur{
+	background-color: #a6a6a6;
+	padding: 20px;
+	color: white;
+}
+.main:hover > .image{
+	transform: scale(1.5); /*pilt l'heb 1.5korda suuremaks hoveriga*/
+	transition-duration: 1s;
+}
+
+.side:hover > .image{
+	transform: scale(1.5); /*pilt l'heb 1.5korda suuremaks hoveriga*/
+	transition-duration: 1s;
 }
 .image{
 	height: 120px;
@@ -88,7 +105,7 @@ img:hover{
 	.row{
 		flex-direction: column;
 	}
-	 .main{
+	.main{
 		background-color: yellow;
 	}
 }
